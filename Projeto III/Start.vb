@@ -1,4 +1,5 @@
 ﻿
+Imports System.Reflection
 Imports System.Threading
 Public Class Start
 
@@ -14,6 +15,10 @@ Public Class Start
 
     Dim Reiniciar As Boolean = False
 
+    Dim EstadoAnterior As String = "s113"
+
+    Dim AcaoEscolhida As EnumProj.Direcoes
+
     Dim rnd() As String = {"max", "max", "rnd", "max", "max", "rnd", "max", "max", "rnd", "max"}
 
 
@@ -28,7 +33,6 @@ Public Class Start
         Me.Inicializa()
         Me.CriaGrid()
         Me.ShowDialog()
-        Me.CriaGrid()
 
 
     End Sub
@@ -60,7 +64,7 @@ Public Class Start
                                           Case "s5", "s12", "s14", "s24", "s25", "s27", "s31", "s33", "s34", "s38", "s45", "s67", "s103"
                                               p.Recompensa = -100
                                           Case Else
-                                              p.Recompensa = 1
+                                              p.Recompensa = 0
                                       End Select
                                   End Sub)
     End Sub
@@ -103,6 +107,45 @@ Public Class Start
                 Me.lstTransicoes.Add(New Transicao(pmestado, EnumProj.Direcoes.Oeste))
         End Select
 
+    End Sub
+
+    Private Sub CriaGrid()
+        Try
+            With Me.dgvTransicoes
+                If .Columns.Count = 0 Then
+                    .Columns.AddRange(New DataGridViewColumn() {
+                                      New DataGridViewTextBoxColumn With {.DataPropertyName = "Estado",
+                                                                          .HeaderText = "Estado",
+                                                                          .Name = "Estado",
+                                                                          .Width = 100,
+                                                                          .DefaultCellStyle = New DataGridViewCellStyle With {.ForeColor = Color.Black}},
+                                      New DataGridViewTextBoxColumn With {.DataPropertyName = "Acao",
+                                                                          .HeaderText = "Acao",
+                                                                          .Name = "Acao",
+                                                                          .Width = 150},
+                                      New DataGridViewTextBoxColumn With {.DataPropertyName = "Recompensa",
+                                                                          .HeaderText = "Recompensa",
+                                                                          .Name = "Recompensa",
+                                                                          .ValueType = GetType(Double),
+                                                                          .Width = 100}})
+
+                End If
+            End With
+
+            Me.dgvTransicoes.DataSource = New BindingSource() With {.DataSource = Me.ConvertToDataTable(Me.lstTransicoes.OrderBy(Function(x) CInt(x.Estado.Replace("s", ""))).ToList)}
+
+            Me.dgvTransicoes.Refresh()
+            For Each dr As DataGridViewRow In Me.dgvTransicoes.Rows
+                If dr.Cells("Estado").Value = Me.EstadoAnterior And dr.Cells("Acao").Value = AcaoEscolhida Then
+                    Me.dgvTransicoes.CurrentCell = dr.Cells("Estado")
+                    Exit For
+                End If
+            Next
+
+
+        Catch ex As Exception
+
+        End Try
     End Sub
 
 
@@ -175,10 +218,19 @@ Public Class Start
             Dim NovoEstado As String = Me.RetornaEstado(Me.EstadoAtual, Acao)
 
             Me.AtualizaQ(Acao, NovoEstado)
+            Invoke(Sub() Me.CriaGrid())
+            System.Threading.Thread.Sleep(CInt(Me.txtAtraso.Text))
             cont += 1
-            Me.Invoke(Sub() Me.lblEstado.Text = Me.EstadoAtual)
-            Me.Invoke(Sub() Me.lblEstado.Refresh())
-            Dim t As List(Of Transicao) = Me.lstTransicoes.FindAll(Function(p) p.Recompensa > 0)
+            Try
+                Me.Invoke(Sub() Me.lblEstado.Text = Me.EstadoAtual)
+                Me.Invoke(Sub() Me.lblEstado.Refresh())
+                Me.Invoke(Sub() Me.lblEstadoAnterior.Text = Me.EstadoAnterior)
+                Me.Invoke(Sub() Me.lblEstadoAnterior.Refresh())
+                Me.Invoke(Sub() Me.lblAcaoEscolhida.Text = [Enum].GetName(GetType(EnumProj.Direcoes), Me.AcaoEscolhida))
+                Me.Invoke(Sub() Me.lblAcaoEscolhida.Refresh())
+            Catch ex As Exception
+
+            End Try
         End While
 
         MsgBox(String.Concat("Foram feitas ", cont, " transições até chegar ao destino!"), MsgBoxStyle.Information)
@@ -199,8 +251,9 @@ Public Class Start
         'Q(s1, a12):
         'Q(s1, a12) = r + 0.5 * max(Q(s2, a21),
         'Q(s2, a25), Q(s2, a23))
-        Me.lstTransicoes.Find(Function(p) p.Estado = Me.EstadoAtual And p.Acao = pmAcao).Recompensa = Me.r(Me.EstadoAtual) + Me.txtY.Text * Me.Max(pmEstadoNovo)
-        If pmEstadoNovo = "s60" Then Me.lstTransicoes.Find(Function(p) p.Estado = Me.EstadoAtual And p.Acao = pmAcao).Recompensa = 100
+        Me.lstTransicoes.Find(Function(p) p.Estado = Me.EstadoAtual And p.Acao = pmAcao).Recompensa = Math.Round(Me.r(pmEstadoNovo) + CDbl(Me.txtY.Text) * Me.Max(pmEstadoNovo), 4)
+        Me.EstadoAnterior = Me.EstadoAtual
+        Me.AcaoEscolhida = pmAcao
         Me.EstadoAtual = pmEstadoNovo
         Me.MudaCarrinho()
     End Sub
@@ -239,34 +292,23 @@ Public Class Start
 
     End Sub
 
-    Private Sub CriaGrid()
-        Try
-            With Me.dgvTransicoes
-                If .Columns.Count = 0 Then
-                    .Columns.AddRange(New DataGridViewColumn() {
-                                      New DataGridViewTextBoxColumn With {.DataPropertyName = "Estado",
-                                                                          .HeaderText = "Estado",
-                                                                          .Name = "Estado",
-                                                                          .Width = 100,
-                                                                          .DefaultCellStyle = New DataGridViewCellStyle With {.ForeColor = Color.Black}},
-                                      New DataGridViewTextBoxColumn With {.DataPropertyName = "Acao",
-                                                                          .HeaderText = "Acao",
-                                                                          .Name = "Acao",
-                                                                          .Width = 100},
-                                      New DataGridViewTextBoxColumn With {.DataPropertyName = "Transicao.Recompensa",
-                                                                          .HeaderText = "Recompensa",
-                                                                          .Name = "Transicao.Recompensa",
-                                                                          .Width = 100}})
-                End If
-            End With
 
-            Me.dgvTransicoes.DataSource = New BindingSource() With {.DataSource = Me.lstTransicoes}
-            Me.dgvTransicoes.Refresh()
 
-        Catch ex As Exception
-
-        End Try
-    End Sub
+    Public Function ConvertToDataTable(Of T)(ByVal list As IList(Of T)) As DataTable
+        Dim table As New DataTable()
+        Dim fields() As FieldInfo = GetType(T).GetFields()
+        For Each field As FieldInfo In fields
+            table.Columns.Add(field.Name, field.FieldType)
+        Next
+        For Each item As T In list
+            Dim row As DataRow = table.NewRow()
+            For Each field As FieldInfo In fields
+                row(field.Name) = field.GetValue(item)
+            Next
+            table.Rows.Add(row)
+        Next
+        Return table
+    End Function
 
     Private Function RetornaRecompensa(pmEstado As String, pmAcao As EnumProj.Direcoes) As Transicao
 
@@ -315,7 +357,6 @@ Public Class Start
     End Sub
 
     Private Sub AtualizaPosCarro(ByRef pnl As Panel)
-        System.Threading.Thread.Sleep(CInt(Me.txtAtraso.Text))
         pnl.Controls.Add(Me.pbcarro)
         Me.pbcarro.BringToFront()
         Me.tblPanel.Refresh()
@@ -326,5 +367,9 @@ Public Class Start
         If Me.Iniciado Then
             Me.Pause = Not Me.Pause
         End If
+    End Sub
+
+    Private Sub Start_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+
     End Sub
 End Class

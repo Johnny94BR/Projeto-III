@@ -23,8 +23,8 @@ Partial Class Start
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Start))
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.s36 = New System.Windows.Forms.Panel()
         Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.s9 = New System.Windows.Forms.Panel()
@@ -74,9 +74,9 @@ Partial Class Start
         Me.TextBox59 = New System.Windows.Forms.TextBox()
         Me.s92 = New System.Windows.Forms.Panel()
         Me.TextBox72 = New System.Windows.Forms.TextBox()
-        Me.s44 = New System.Windows.Forms.Panel()
-        Me.TextBox53 = New System.Windows.Forms.TextBox()
         Me.s43 = New System.Windows.Forms.Panel()
+        Me.TextBox53 = New System.Windows.Forms.TextBox()
+        Me.s44 = New System.Windows.Forms.Panel()
         Me.TextBox57 = New System.Windows.Forms.TextBox()
         Me.s42 = New System.Windows.Forms.Panel()
         Me.TextBox58 = New System.Windows.Forms.TextBox()
@@ -201,6 +201,13 @@ Partial Class Start
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.dgvTransicoes = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lblEstadoAnterior = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lblAcaoEscolhida = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.s36.SuspendLayout()
         Me.s9.SuspendLayout()
         Me.s101.SuspendLayout()
@@ -225,8 +232,8 @@ Partial Class Start
         Me.s48.SuspendLayout()
         Me.s46.SuspendLayout()
         Me.s92.SuspendLayout()
-        Me.s44.SuspendLayout()
         Me.s43.SuspendLayout()
+        Me.s44.SuspendLayout()
         Me.s42.SuspendLayout()
         Me.s41.SuspendLayout()
         Me.s40.SuspendLayout()
@@ -296,9 +303,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s36.BackColor = System.Drawing.Color.DimGray
         Me.s36.Controls.Add(Me.TextBox20)
-        Me.s36.Location = New System.Drawing.Point(1225, 158)
+        Me.s36.Location = New System.Drawing.Point(783, 130)
         Me.s36.Name = "s36"
-        Me.s36.Size = New System.Drawing.Size(114, 70)
+        Me.s36.Size = New System.Drawing.Size(73, 56)
         Me.s36.TabIndex = 39
         '
         'TextBox20
@@ -317,9 +324,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s9.BackColor = System.Drawing.Color.DimGray
         Me.s9.Controls.Add(Me.TextBox19)
-        Me.s9.Location = New System.Drawing.Point(892, 4)
+        Me.s9.Location = New System.Drawing.Point(570, 4)
         Me.s9.Name = "s9"
-        Me.s9.Size = New System.Drawing.Size(104, 70)
+        Me.s9.Size = New System.Drawing.Size(64, 56)
         Me.s9.TabIndex = 38
         '
         'TextBox19
@@ -338,9 +345,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s101.BackColor = System.Drawing.Color.DimGray
         Me.s101.Controls.Add(Me.TextBox22)
-        Me.s101.Location = New System.Drawing.Point(448, 620)
+        Me.s101.Location = New System.Drawing.Point(286, 508)
         Me.s101.Name = "s101"
-        Me.s101.Size = New System.Drawing.Size(104, 70)
+        Me.s101.Size = New System.Drawing.Size(64, 56)
         Me.s101.TabIndex = 37
         '
         'TextBox22
@@ -359,9 +366,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s28.BackColor = System.Drawing.Color.DimGray
         Me.s28.Controls.Add(Me.TextBox21)
-        Me.s28.Location = New System.Drawing.Point(337, 158)
+        Me.s28.Location = New System.Drawing.Point(215, 130)
         Me.s28.Name = "s28"
-        Me.s28.Size = New System.Drawing.Size(104, 70)
+        Me.s28.Size = New System.Drawing.Size(64, 56)
         Me.s28.TabIndex = 36
         '
         'TextBox21
@@ -380,9 +387,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s26.BackColor = System.Drawing.Color.DimGray
         Me.s26.Controls.Add(Me.TextBox14)
-        Me.s26.Location = New System.Drawing.Point(115, 158)
+        Me.s26.Location = New System.Drawing.Point(73, 130)
         Me.s26.Name = "s26"
-        Me.s26.Size = New System.Drawing.Size(104, 70)
+        Me.s26.Size = New System.Drawing.Size(64, 56)
         Me.s26.TabIndex = 35
         '
         'TextBox14
@@ -401,9 +408,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s12.BackColor = System.Drawing.Color.Black
         Me.s12.Controls.Add(Me.TextBox50)
-        Me.s12.Location = New System.Drawing.Point(1225, 4)
+        Me.s12.Location = New System.Drawing.Point(783, 4)
         Me.s12.Name = "s12"
-        Me.s12.Size = New System.Drawing.Size(114, 70)
+        Me.s12.Size = New System.Drawing.Size(73, 56)
         Me.s12.TabIndex = 34
         '
         'TextBox50
@@ -422,9 +429,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s29.BackColor = System.Drawing.Color.DimGray
         Me.s29.Controls.Add(Me.TextBox51)
-        Me.s29.Location = New System.Drawing.Point(448, 158)
+        Me.s29.Location = New System.Drawing.Point(286, 130)
         Me.s29.Name = "s29"
-        Me.s29.Size = New System.Drawing.Size(104, 70)
+        Me.s29.Size = New System.Drawing.Size(64, 56)
         Me.s29.TabIndex = 33
         '
         'TextBox51
@@ -443,9 +450,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s30.BackColor = System.Drawing.Color.DimGray
         Me.s30.Controls.Add(Me.TextBox52)
-        Me.s30.Location = New System.Drawing.Point(559, 158)
+        Me.s30.Location = New System.Drawing.Point(357, 130)
         Me.s30.Name = "s30"
-        Me.s30.Size = New System.Drawing.Size(104, 70)
+        Me.s30.Size = New System.Drawing.Size(64, 56)
         Me.s30.TabIndex = 32
         '
         'TextBox52
@@ -464,9 +471,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s32.BackColor = System.Drawing.Color.DimGray
         Me.s32.Controls.Add(Me.TextBox47)
-        Me.s32.Location = New System.Drawing.Point(781, 158)
+        Me.s32.Location = New System.Drawing.Point(499, 130)
         Me.s32.Name = "s32"
-        Me.s32.Size = New System.Drawing.Size(104, 70)
+        Me.s32.Size = New System.Drawing.Size(64, 56)
         Me.s32.TabIndex = 29
         '
         'TextBox47
@@ -485,9 +492,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s34.BackColor = System.Drawing.Color.Black
         Me.s34.Controls.Add(Me.TextBox48)
-        Me.s34.Location = New System.Drawing.Point(1003, 158)
+        Me.s34.Location = New System.Drawing.Point(641, 130)
         Me.s34.Name = "s34"
-        Me.s34.Size = New System.Drawing.Size(104, 70)
+        Me.s34.Size = New System.Drawing.Size(64, 56)
         Me.s34.TabIndex = 28
         '
         'TextBox48
@@ -506,9 +513,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s35.BackColor = System.Drawing.Color.DimGray
         Me.s35.Controls.Add(Me.TextBox49)
-        Me.s35.Location = New System.Drawing.Point(1114, 158)
+        Me.s35.Location = New System.Drawing.Point(712, 130)
         Me.s35.Name = "s35"
-        Me.s35.Size = New System.Drawing.Size(104, 70)
+        Me.s35.Size = New System.Drawing.Size(64, 56)
         Me.s35.TabIndex = 27
         '
         'TextBox49
@@ -527,9 +534,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s25.BackColor = System.Drawing.Color.Black
         Me.s25.Controls.Add(Me.TextBox13)
-        Me.s25.Location = New System.Drawing.Point(4, 158)
+        Me.s25.Location = New System.Drawing.Point(4, 130)
         Me.s25.Name = "s25"
-        Me.s25.Size = New System.Drawing.Size(104, 70)
+        Me.s25.Size = New System.Drawing.Size(62, 56)
         Me.s25.TabIndex = 26
         '
         'TextBox13
@@ -548,9 +555,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s16.BackColor = System.Drawing.Color.DimGray
         Me.s16.Controls.Add(Me.TextBox40)
-        Me.s16.Location = New System.Drawing.Point(337, 81)
+        Me.s16.Location = New System.Drawing.Point(215, 67)
         Me.s16.Name = "s16"
-        Me.s16.Size = New System.Drawing.Size(104, 70)
+        Me.s16.Size = New System.Drawing.Size(64, 56)
         Me.s16.TabIndex = 24
         '
         'TextBox40
@@ -569,9 +576,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s15.BackColor = System.Drawing.Color.DimGray
         Me.s15.Controls.Add(Me.TextBox39)
-        Me.s15.Location = New System.Drawing.Point(226, 81)
+        Me.s15.Location = New System.Drawing.Point(144, 67)
         Me.s15.Name = "s15"
-        Me.s15.Size = New System.Drawing.Size(104, 70)
+        Me.s15.Size = New System.Drawing.Size(64, 56)
         Me.s15.TabIndex = 23
         '
         'TextBox39
@@ -590,9 +597,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s14.BackColor = System.Drawing.Color.Black
         Me.s14.Controls.Add(Me.TextBox38)
-        Me.s14.Location = New System.Drawing.Point(115, 81)
+        Me.s14.Location = New System.Drawing.Point(73, 67)
         Me.s14.Name = "s14"
-        Me.s14.Size = New System.Drawing.Size(104, 70)
+        Me.s14.Size = New System.Drawing.Size(64, 56)
         Me.s14.TabIndex = 22
         '
         'TextBox38
@@ -611,9 +618,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s13.BackColor = System.Drawing.Color.DimGray
         Me.s13.Controls.Add(Me.TextBox12)
-        Me.s13.Location = New System.Drawing.Point(4, 81)
+        Me.s13.Location = New System.Drawing.Point(4, 67)
         Me.s13.Name = "s13"
-        Me.s13.Size = New System.Drawing.Size(104, 70)
+        Me.s13.Size = New System.Drawing.Size(62, 56)
         Me.s13.TabIndex = 21
         '
         'TextBox12
@@ -632,9 +639,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s4.BackColor = System.Drawing.Color.DimGray
         Me.s4.Controls.Add(Me.TextBox3)
-        Me.s4.Location = New System.Drawing.Point(337, 4)
+        Me.s4.Location = New System.Drawing.Point(215, 4)
         Me.s4.Name = "s4"
-        Me.s4.Size = New System.Drawing.Size(104, 70)
+        Me.s4.Size = New System.Drawing.Size(64, 56)
         Me.s4.TabIndex = 19
         '
         'TextBox3
@@ -653,9 +660,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s3.BackColor = System.Drawing.Color.DimGray
         Me.s3.Controls.Add(Me.TextBox2)
-        Me.s3.Location = New System.Drawing.Point(226, 4)
+        Me.s3.Location = New System.Drawing.Point(144, 4)
         Me.s3.Name = "s3"
-        Me.s3.Size = New System.Drawing.Size(104, 70)
+        Me.s3.Size = New System.Drawing.Size(64, 56)
         Me.s3.TabIndex = 18
         '
         'TextBox2
@@ -676,7 +683,7 @@ Partial Class Start
         Me.s1.Controls.Add(Me.TextBox0)
         Me.s1.Location = New System.Drawing.Point(4, 4)
         Me.s1.Name = "s1"
-        Me.s1.Size = New System.Drawing.Size(104, 70)
+        Me.s1.Size = New System.Drawing.Size(62, 56)
         Me.s1.TabIndex = 15
         '
         'TextBox0
@@ -695,9 +702,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s2.BackColor = System.Drawing.Color.DimGray
         Me.s2.Controls.Add(Me.TextBox1)
-        Me.s2.Location = New System.Drawing.Point(115, 4)
+        Me.s2.Location = New System.Drawing.Point(73, 4)
         Me.s2.Name = "s2"
-        Me.s2.Size = New System.Drawing.Size(104, 70)
+        Me.s2.Size = New System.Drawing.Size(64, 56)
         Me.s2.TabIndex = 17
         '
         'TextBox1
@@ -716,7 +723,7 @@ Partial Class Start
         Me.BtnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnIniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnIniciar.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.BtnIniciar.Location = New System.Drawing.Point(1198, 20)
+        Me.BtnIniciar.Location = New System.Drawing.Point(544, 14)
         Me.BtnIniciar.Name = "BtnIniciar"
         Me.BtnIniciar.Size = New System.Drawing.Size(113, 44)
         Me.BtnIniciar.TabIndex = 18
@@ -730,9 +737,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s47.BackColor = System.Drawing.Color.DimGray
         Me.s47.Controls.Add(Me.TextBox54)
-        Me.s47.Location = New System.Drawing.Point(1114, 235)
+        Me.s47.Location = New System.Drawing.Point(712, 193)
         Me.s47.Name = "s47"
-        Me.s47.Size = New System.Drawing.Size(104, 70)
+        Me.s47.Size = New System.Drawing.Size(64, 56)
         Me.s47.TabIndex = 39
         '
         'TextBox54
@@ -751,9 +758,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s48.BackColor = System.Drawing.Color.DimGray
         Me.s48.Controls.Add(Me.TextBox56)
-        Me.s48.Location = New System.Drawing.Point(1225, 235)
+        Me.s48.Location = New System.Drawing.Point(783, 193)
         Me.s48.Name = "s48"
-        Me.s48.Size = New System.Drawing.Size(114, 70)
+        Me.s48.Size = New System.Drawing.Size(73, 56)
         Me.s48.TabIndex = 38
         '
         'TextBox56
@@ -772,9 +779,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s46.BackColor = System.Drawing.Color.DimGray
         Me.s46.Controls.Add(Me.TextBox59)
-        Me.s46.Location = New System.Drawing.Point(1003, 235)
+        Me.s46.Location = New System.Drawing.Point(641, 193)
         Me.s46.Name = "s46"
-        Me.s46.Size = New System.Drawing.Size(104, 70)
+        Me.s46.Size = New System.Drawing.Size(64, 56)
         Me.s46.TabIndex = 37
         '
         'TextBox59
@@ -793,9 +800,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s92.BackColor = System.Drawing.Color.DimGray
         Me.s92.Controls.Add(Me.TextBox72)
-        Me.s92.Location = New System.Drawing.Point(781, 543)
+        Me.s92.Location = New System.Drawing.Point(499, 445)
         Me.s92.Name = "s92"
-        Me.s92.Size = New System.Drawing.Size(104, 70)
+        Me.s92.Size = New System.Drawing.Size(64, 56)
         Me.s92.TabIndex = 36
         '
         'TextBox72
@@ -807,17 +814,17 @@ Partial Class Start
         Me.TextBox72.Text = "5"
         Me.TextBox72.Visible = False
         '
-        's44
+        's43
         '
-        Me.s44.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.s43.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.s44.BackColor = System.Drawing.Color.DimGray
-        Me.s44.Controls.Add(Me.TextBox53)
-        Me.s44.Location = New System.Drawing.Point(670, 235)
-        Me.s44.Name = "s44"
-        Me.s44.Size = New System.Drawing.Size(104, 70)
-        Me.s44.TabIndex = 35
+        Me.s43.BackColor = System.Drawing.Color.DimGray
+        Me.s43.Controls.Add(Me.TextBox53)
+        Me.s43.Location = New System.Drawing.Point(428, 193)
+        Me.s43.Name = "s43"
+        Me.s43.Size = New System.Drawing.Size(64, 56)
+        Me.s43.TabIndex = 35
         '
         'TextBox53
         '
@@ -828,17 +835,17 @@ Partial Class Start
         Me.TextBox53.Text = "4"
         Me.TextBox53.Visible = False
         '
-        's43
+        's44
         '
-        Me.s43.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.s44.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.s43.BackColor = System.Drawing.Color.DimGray
-        Me.s43.Controls.Add(Me.TextBox57)
-        Me.s43.Location = New System.Drawing.Point(781, 235)
-        Me.s43.Name = "s43"
-        Me.s43.Size = New System.Drawing.Size(104, 70)
-        Me.s43.TabIndex = 34
+        Me.s44.BackColor = System.Drawing.Color.DimGray
+        Me.s44.Controls.Add(Me.TextBox57)
+        Me.s44.Location = New System.Drawing.Point(499, 193)
+        Me.s44.Name = "s44"
+        Me.s44.Size = New System.Drawing.Size(64, 56)
+        Me.s44.TabIndex = 34
         '
         'TextBox57
         '
@@ -856,9 +863,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s42.BackColor = System.Drawing.Color.DimGray
         Me.s42.Controls.Add(Me.TextBox58)
-        Me.s42.Location = New System.Drawing.Point(559, 235)
+        Me.s42.Location = New System.Drawing.Point(357, 193)
         Me.s42.Name = "s42"
-        Me.s42.Size = New System.Drawing.Size(104, 70)
+        Me.s42.Size = New System.Drawing.Size(64, 56)
         Me.s42.TabIndex = 33
         '
         'TextBox58
@@ -877,9 +884,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s41.BackColor = System.Drawing.Color.DimGray
         Me.s41.Controls.Add(Me.TextBox62)
-        Me.s41.Location = New System.Drawing.Point(448, 235)
+        Me.s41.Location = New System.Drawing.Point(286, 193)
         Me.s41.Name = "s41"
-        Me.s41.Size = New System.Drawing.Size(104, 70)
+        Me.s41.Size = New System.Drawing.Size(64, 56)
         Me.s41.TabIndex = 32
         '
         'TextBox62
@@ -898,9 +905,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s40.BackColor = System.Drawing.Color.DimGray
         Me.s40.Controls.Add(Me.TextBox61)
-        Me.s40.Location = New System.Drawing.Point(337, 235)
+        Me.s40.Location = New System.Drawing.Point(215, 193)
         Me.s40.Name = "s40"
-        Me.s40.Size = New System.Drawing.Size(104, 70)
+        Me.s40.Size = New System.Drawing.Size(64, 56)
         Me.s40.TabIndex = 29
         '
         'TextBox61
@@ -919,9 +926,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s38.BackColor = System.Drawing.Color.Black
         Me.s38.Controls.Add(Me.TextBox44)
-        Me.s38.Location = New System.Drawing.Point(115, 235)
+        Me.s38.Location = New System.Drawing.Point(73, 193)
         Me.s38.Name = "s38"
-        Me.s38.Size = New System.Drawing.Size(104, 70)
+        Me.s38.Size = New System.Drawing.Size(64, 56)
         Me.s38.TabIndex = 28
         '
         'TextBox44
@@ -940,9 +947,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s51.BackColor = System.Drawing.Color.DimGray
         Me.s51.Controls.Add(Me.TextBox45)
-        Me.s51.Location = New System.Drawing.Point(226, 312)
+        Me.s51.Location = New System.Drawing.Point(144, 256)
         Me.s51.Name = "s51"
-        Me.s51.Size = New System.Drawing.Size(104, 70)
+        Me.s51.Size = New System.Drawing.Size(64, 56)
         Me.s51.TabIndex = 27
         '
         'TextBox45
@@ -961,9 +968,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s37.BackColor = System.Drawing.Color.DimGray
         Me.s37.Controls.Add(Me.TextBox46)
-        Me.s37.Location = New System.Drawing.Point(4, 235)
+        Me.s37.Location = New System.Drawing.Point(4, 193)
         Me.s37.Name = "s37"
-        Me.s37.Size = New System.Drawing.Size(104, 70)
+        Me.s37.Size = New System.Drawing.Size(62, 56)
         Me.s37.TabIndex = 26
         '
         'TextBox46
@@ -982,9 +989,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s20.BackColor = System.Drawing.Color.DimGray
         Me.s20.Controls.Add(Me.TextBox60)
-        Me.s20.Location = New System.Drawing.Point(781, 81)
+        Me.s20.Location = New System.Drawing.Point(499, 67)
         Me.s20.Name = "s20"
-        Me.s20.Size = New System.Drawing.Size(104, 70)
+        Me.s20.Size = New System.Drawing.Size(64, 56)
         Me.s20.TabIndex = 24
         '
         'TextBox60
@@ -1003,9 +1010,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s19.BackColor = System.Drawing.Color.DimGray
         Me.s19.Controls.Add(Me.TextBox43)
-        Me.s19.Location = New System.Drawing.Point(670, 81)
+        Me.s19.Location = New System.Drawing.Point(428, 67)
         Me.s19.Name = "s19"
-        Me.s19.Size = New System.Drawing.Size(104, 70)
+        Me.s19.Size = New System.Drawing.Size(64, 56)
         Me.s19.TabIndex = 23
         '
         'TextBox43
@@ -1024,9 +1031,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s18.BackColor = System.Drawing.Color.DimGray
         Me.s18.Controls.Add(Me.TextBox42)
-        Me.s18.Location = New System.Drawing.Point(559, 81)
+        Me.s18.Location = New System.Drawing.Point(357, 67)
         Me.s18.Name = "s18"
-        Me.s18.Size = New System.Drawing.Size(104, 70)
+        Me.s18.Size = New System.Drawing.Size(64, 56)
         Me.s18.TabIndex = 22
         '
         'TextBox42
@@ -1045,9 +1052,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s17.BackColor = System.Drawing.Color.DimGray
         Me.s17.Controls.Add(Me.TextBox41)
-        Me.s17.Location = New System.Drawing.Point(448, 81)
+        Me.s17.Location = New System.Drawing.Point(286, 67)
         Me.s17.Name = "s17"
-        Me.s17.Size = New System.Drawing.Size(104, 70)
+        Me.s17.Size = New System.Drawing.Size(64, 56)
         Me.s17.TabIndex = 21
         '
         'TextBox41
@@ -1066,9 +1073,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s8.BackColor = System.Drawing.Color.DimGray
         Me.s8.Controls.Add(Me.TextBox7)
-        Me.s8.Location = New System.Drawing.Point(781, 4)
+        Me.s8.Location = New System.Drawing.Point(499, 4)
         Me.s8.Name = "s8"
-        Me.s8.Size = New System.Drawing.Size(104, 70)
+        Me.s8.Size = New System.Drawing.Size(64, 56)
         Me.s8.TabIndex = 19
         '
         'TextBox7
@@ -1087,9 +1094,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s7.BackColor = System.Drawing.Color.DimGray
         Me.s7.Controls.Add(Me.TextBox6)
-        Me.s7.Location = New System.Drawing.Point(670, 4)
+        Me.s7.Location = New System.Drawing.Point(428, 4)
         Me.s7.Name = "s7"
-        Me.s7.Size = New System.Drawing.Size(104, 70)
+        Me.s7.Size = New System.Drawing.Size(64, 56)
         Me.s7.TabIndex = 18
         '
         'TextBox6
@@ -1108,9 +1115,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s6.BackColor = System.Drawing.Color.DimGray
         Me.s6.Controls.Add(Me.TextBox5)
-        Me.s6.Location = New System.Drawing.Point(559, 4)
+        Me.s6.Location = New System.Drawing.Point(357, 4)
         Me.s6.Name = "s6"
-        Me.s6.Size = New System.Drawing.Size(104, 70)
+        Me.s6.Size = New System.Drawing.Size(64, 56)
         Me.s6.TabIndex = 17
         '
         'TextBox5
@@ -1129,9 +1136,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s5.BackColor = System.Drawing.Color.Black
         Me.s5.Controls.Add(Me.TextBox4)
-        Me.s5.Location = New System.Drawing.Point(448, 4)
+        Me.s5.Location = New System.Drawing.Point(286, 4)
         Me.s5.Name = "s5"
-        Me.s5.Size = New System.Drawing.Size(104, 70)
+        Me.s5.Size = New System.Drawing.Size(64, 56)
         Me.s5.TabIndex = 15
         '
         'TextBox4
@@ -1150,9 +1157,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s68.BackColor = System.Drawing.Color.DimGray
         Me.s68.Controls.Add(Me.TextBox29)
-        Me.s68.Location = New System.Drawing.Point(781, 389)
+        Me.s68.Location = New System.Drawing.Point(499, 319)
         Me.s68.Name = "s68"
-        Me.s68.Size = New System.Drawing.Size(104, 70)
+        Me.s68.Size = New System.Drawing.Size(64, 56)
         Me.s68.TabIndex = 39
         '
         'TextBox29
@@ -1172,17 +1179,17 @@ Partial Class Start
         Me.s113.BackColor = System.Drawing.Color.IndianRed
         Me.s113.Controls.Add(Me.pbcarro)
         Me.s113.Controls.Add(Me.TextBox28)
-        Me.s113.Location = New System.Drawing.Point(448, 697)
+        Me.s113.Location = New System.Drawing.Point(286, 571)
         Me.s113.Name = "s113"
-        Me.s113.Size = New System.Drawing.Size(104, 71)
+        Me.s113.Size = New System.Drawing.Size(64, 62)
         Me.s113.TabIndex = 38
         '
         'pbcarro
         '
         Me.pbcarro.Image = CType(resources.GetObject("pbcarro.Image"), System.Drawing.Image)
-        Me.pbcarro.Location = New System.Drawing.Point(29, 0)
+        Me.pbcarro.Location = New System.Drawing.Point(13, -1)
         Me.pbcarro.Name = "pbcarro"
-        Me.pbcarro.Size = New System.Drawing.Size(47, 71)
+        Me.pbcarro.Size = New System.Drawing.Size(36, 66)
         Me.pbcarro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbcarro.TabIndex = 22
         Me.pbcarro.TabStop = False
@@ -1203,9 +1210,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s66.BackColor = System.Drawing.Color.DimGray
         Me.s66.Controls.Add(Me.TextBox27)
-        Me.s66.Location = New System.Drawing.Point(559, 389)
+        Me.s66.Location = New System.Drawing.Point(357, 319)
         Me.s66.Name = "s66"
-        Me.s66.Size = New System.Drawing.Size(104, 70)
+        Me.s66.Size = New System.Drawing.Size(64, 56)
         Me.s66.TabIndex = 37
         '
         'TextBox27
@@ -1224,9 +1231,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s65.BackColor = System.Drawing.Color.DimGray
         Me.s65.Controls.Add(Me.TextBox30)
-        Me.s65.Location = New System.Drawing.Point(448, 389)
+        Me.s65.Location = New System.Drawing.Point(286, 319)
         Me.s65.Name = "s65"
-        Me.s65.Size = New System.Drawing.Size(104, 70)
+        Me.s65.Size = New System.Drawing.Size(64, 56)
         Me.s65.TabIndex = 36
         '
         'TextBox30
@@ -1245,9 +1252,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s102.BackColor = System.Drawing.Color.DimGray
         Me.s102.Controls.Add(Me.TextBox18)
-        Me.s102.Location = New System.Drawing.Point(559, 620)
+        Me.s102.Location = New System.Drawing.Point(357, 508)
         Me.s102.Name = "s102"
-        Me.s102.Size = New System.Drawing.Size(104, 70)
+        Me.s102.Size = New System.Drawing.Size(64, 56)
         Me.s102.TabIndex = 35
         '
         'TextBox18
@@ -1266,9 +1273,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s78.BackColor = System.Drawing.Color.DimGray
         Me.s78.Controls.Add(Me.TextBox78)
-        Me.s78.Location = New System.Drawing.Point(559, 466)
+        Me.s78.Location = New System.Drawing.Point(357, 382)
         Me.s78.Name = "s78"
-        Me.s78.Size = New System.Drawing.Size(104, 70)
+        Me.s78.Size = New System.Drawing.Size(64, 56)
         Me.s78.TabIndex = 34
         '
         'TextBox78
@@ -1287,9 +1294,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s31.BackColor = System.Drawing.Color.Black
         Me.s31.Controls.Add(Me.TextBox79)
-        Me.s31.Location = New System.Drawing.Point(670, 158)
+        Me.s31.Location = New System.Drawing.Point(428, 130)
         Me.s31.Name = "s31"
-        Me.s31.Size = New System.Drawing.Size(104, 70)
+        Me.s31.Size = New System.Drawing.Size(64, 56)
         Me.s31.TabIndex = 33
         '
         'TextBox79
@@ -1308,9 +1315,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s79.BackColor = System.Drawing.Color.DimGray
         Me.s79.Controls.Add(Me.TextBox37)
-        Me.s79.Location = New System.Drawing.Point(670, 466)
+        Me.s79.Location = New System.Drawing.Point(428, 382)
         Me.s79.Name = "s79"
-        Me.s79.Size = New System.Drawing.Size(104, 70)
+        Me.s79.Size = New System.Drawing.Size(64, 56)
         Me.s79.TabIndex = 32
         '
         'TextBox37
@@ -1329,9 +1336,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s104.BackColor = System.Drawing.Color.DimGray
         Me.s104.Controls.Add(Me.TextBox36)
-        Me.s104.Location = New System.Drawing.Point(781, 620)
+        Me.s104.Location = New System.Drawing.Point(499, 508)
         Me.s104.Name = "s104"
-        Me.s104.Size = New System.Drawing.Size(104, 70)
+        Me.s104.Size = New System.Drawing.Size(64, 56)
         Me.s104.TabIndex = 29
         '
         'TextBox36
@@ -1350,9 +1357,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s59.BackColor = System.Drawing.Color.DimGray
         Me.s59.Controls.Add(Me.TextBox77)
-        Me.s59.Location = New System.Drawing.Point(1114, 312)
+        Me.s59.Location = New System.Drawing.Point(712, 256)
         Me.s59.Name = "s59"
-        Me.s59.Size = New System.Drawing.Size(104, 70)
+        Me.s59.Size = New System.Drawing.Size(64, 56)
         Me.s59.TabIndex = 28
         '
         'TextBox77
@@ -1371,9 +1378,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s58.BackColor = System.Drawing.Color.DimGray
         Me.s58.Controls.Add(Me.TextBox76)
-        Me.s58.Location = New System.Drawing.Point(1003, 312)
+        Me.s58.Location = New System.Drawing.Point(641, 256)
         Me.s58.Name = "s58"
-        Me.s58.Size = New System.Drawing.Size(104, 70)
+        Me.s58.Size = New System.Drawing.Size(64, 56)
         Me.s58.TabIndex = 27
         '
         'TextBox76
@@ -1392,9 +1399,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s57.BackColor = System.Drawing.Color.DimGray
         Me.s57.Controls.Add(Me.TextBox17)
-        Me.s57.Location = New System.Drawing.Point(892, 312)
+        Me.s57.Location = New System.Drawing.Point(570, 256)
         Me.s57.Name = "s57"
-        Me.s57.Size = New System.Drawing.Size(104, 70)
+        Me.s57.Size = New System.Drawing.Size(64, 56)
         Me.s57.TabIndex = 26
         '
         'TextBox17
@@ -1413,9 +1420,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s56.BackColor = System.Drawing.Color.DimGray
         Me.s56.Controls.Add(Me.TextBox35)
-        Me.s56.Location = New System.Drawing.Point(781, 312)
+        Me.s56.Location = New System.Drawing.Point(499, 256)
         Me.s56.Name = "s56"
-        Me.s56.Size = New System.Drawing.Size(104, 70)
+        Me.s56.Size = New System.Drawing.Size(64, 56)
         Me.s56.TabIndex = 24
         '
         'TextBox35
@@ -1434,9 +1441,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s55.BackColor = System.Drawing.Color.DimGray
         Me.s55.Controls.Add(Me.TextBox75)
-        Me.s55.Location = New System.Drawing.Point(670, 312)
+        Me.s55.Location = New System.Drawing.Point(428, 256)
         Me.s55.Name = "s55"
-        Me.s55.Size = New System.Drawing.Size(104, 70)
+        Me.s55.Size = New System.Drawing.Size(64, 56)
         Me.s55.TabIndex = 23
         '
         'TextBox75
@@ -1455,9 +1462,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s54.BackColor = System.Drawing.Color.DimGray
         Me.s54.Controls.Add(Me.TextBox74)
-        Me.s54.Location = New System.Drawing.Point(559, 312)
+        Me.s54.Location = New System.Drawing.Point(357, 256)
         Me.s54.Name = "s54"
-        Me.s54.Size = New System.Drawing.Size(104, 70)
+        Me.s54.Size = New System.Drawing.Size(64, 56)
         Me.s54.TabIndex = 22
         '
         'TextBox74
@@ -1476,9 +1483,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s53.BackColor = System.Drawing.Color.DimGray
         Me.s53.Controls.Add(Me.TextBox16)
-        Me.s53.Location = New System.Drawing.Point(448, 312)
+        Me.s53.Location = New System.Drawing.Point(286, 256)
         Me.s53.Name = "s53"
-        Me.s53.Size = New System.Drawing.Size(104, 70)
+        Me.s53.Size = New System.Drawing.Size(64, 56)
         Me.s53.TabIndex = 21
         '
         'TextBox16
@@ -1497,9 +1504,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s52.BackColor = System.Drawing.Color.DimGray
         Me.s52.Controls.Add(Me.TextBox34)
-        Me.s52.Location = New System.Drawing.Point(337, 312)
+        Me.s52.Location = New System.Drawing.Point(215, 256)
         Me.s52.Name = "s52"
-        Me.s52.Size = New System.Drawing.Size(104, 70)
+        Me.s52.Size = New System.Drawing.Size(64, 56)
         Me.s52.TabIndex = 19
         '
         'TextBox34
@@ -1518,9 +1525,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s27.BackColor = System.Drawing.Color.Black
         Me.s27.Controls.Add(Me.TextBox73)
-        Me.s27.Location = New System.Drawing.Point(226, 158)
+        Me.s27.Location = New System.Drawing.Point(144, 130)
         Me.s27.Name = "s27"
-        Me.s27.Size = New System.Drawing.Size(104, 70)
+        Me.s27.Size = New System.Drawing.Size(64, 56)
         Me.s27.TabIndex = 18
         '
         'TextBox73
@@ -1539,9 +1546,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s49.BackColor = System.Drawing.Color.DimGray
         Me.s49.Controls.Add(Me.TextBox15)
-        Me.s49.Location = New System.Drawing.Point(4, 312)
+        Me.s49.Location = New System.Drawing.Point(4, 256)
         Me.s49.Name = "s49"
-        Me.s49.Size = New System.Drawing.Size(104, 70)
+        Me.s49.Size = New System.Drawing.Size(62, 56)
         Me.s49.TabIndex = 15
         '
         'TextBox15
@@ -1560,9 +1567,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s50.BackColor = System.Drawing.Color.DimGray
         Me.s50.Controls.Add(Me.TextBox55)
-        Me.s50.Location = New System.Drawing.Point(115, 312)
+        Me.s50.Location = New System.Drawing.Point(73, 256)
         Me.s50.Name = "s50"
-        Me.s50.Size = New System.Drawing.Size(104, 70)
+        Me.s50.Size = New System.Drawing.Size(64, 56)
         Me.s50.TabIndex = 17
         '
         'TextBox55
@@ -1576,10 +1583,10 @@ Partial Class Start
         '
         'txtInfo
         '
-        Me.txtInfo.Location = New System.Drawing.Point(16, 532)
+        Me.txtInfo.Location = New System.Drawing.Point(6, 416)
         Me.txtInfo.Multiline = True
         Me.txtInfo.Name = "txtInfo"
-        Me.txtInfo.Size = New System.Drawing.Size(113, 127)
+        Me.txtInfo.Size = New System.Drawing.Size(115, 113)
         Me.txtInfo.TabIndex = 22
         '
         's10
@@ -1589,9 +1596,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s10.BackColor = System.Drawing.Color.DimGray
         Me.s10.Controls.Add(Me.TextBox9)
-        Me.s10.Location = New System.Drawing.Point(1003, 4)
+        Me.s10.Location = New System.Drawing.Point(641, 4)
         Me.s10.Name = "s10"
-        Me.s10.Size = New System.Drawing.Size(104, 70)
+        Me.s10.Size = New System.Drawing.Size(64, 56)
         Me.s10.TabIndex = 17
         '
         'TextBox9
@@ -1610,9 +1617,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s11.BackColor = System.Drawing.Color.DimGray
         Me.s11.Controls.Add(Me.TextBox8)
-        Me.s11.Location = New System.Drawing.Point(1114, 4)
+        Me.s11.Location = New System.Drawing.Point(712, 4)
         Me.s11.Name = "s11"
-        Me.s11.Size = New System.Drawing.Size(104, 70)
+        Me.s11.Size = New System.Drawing.Size(64, 56)
         Me.s11.TabIndex = 15
         '
         'TextBox8
@@ -1631,9 +1638,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s39.BackColor = System.Drawing.Color.DimGray
         Me.s39.Controls.Add(Me.TextBox10)
-        Me.s39.Location = New System.Drawing.Point(226, 235)
+        Me.s39.Location = New System.Drawing.Point(144, 193)
         Me.s39.Name = "s39"
-        Me.s39.Size = New System.Drawing.Size(104, 70)
+        Me.s39.Size = New System.Drawing.Size(64, 56)
         Me.s39.TabIndex = 18
         '
         'TextBox10
@@ -1652,9 +1659,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s33.BackColor = System.Drawing.Color.Black
         Me.s33.Controls.Add(Me.TextBox11)
-        Me.s33.Location = New System.Drawing.Point(892, 158)
+        Me.s33.Location = New System.Drawing.Point(570, 130)
         Me.s33.Name = "s33"
-        Me.s33.Size = New System.Drawing.Size(104, 70)
+        Me.s33.Size = New System.Drawing.Size(64, 56)
         Me.s33.TabIndex = 19
         '
         'TextBox11
@@ -1673,9 +1680,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s21.BackColor = System.Drawing.Color.DimGray
         Me.s21.Controls.Add(Me.TextBox63)
-        Me.s21.Location = New System.Drawing.Point(892, 81)
+        Me.s21.Location = New System.Drawing.Point(570, 67)
         Me.s21.Name = "s21"
-        Me.s21.Size = New System.Drawing.Size(104, 70)
+        Me.s21.Size = New System.Drawing.Size(64, 56)
         Me.s21.TabIndex = 21
         '
         'TextBox63
@@ -1694,9 +1701,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s22.BackColor = System.Drawing.Color.DimGray
         Me.s22.Controls.Add(Me.TextBox66)
-        Me.s22.Location = New System.Drawing.Point(1003, 81)
+        Me.s22.Location = New System.Drawing.Point(641, 67)
         Me.s22.Name = "s22"
-        Me.s22.Size = New System.Drawing.Size(104, 70)
+        Me.s22.Size = New System.Drawing.Size(64, 56)
         Me.s22.TabIndex = 22
         '
         'TextBox66
@@ -1715,9 +1722,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s23.BackColor = System.Drawing.Color.DimGray
         Me.s23.Controls.Add(Me.TextBox69)
-        Me.s23.Location = New System.Drawing.Point(1114, 81)
+        Me.s23.Location = New System.Drawing.Point(712, 67)
         Me.s23.Name = "s23"
-        Me.s23.Size = New System.Drawing.Size(104, 70)
+        Me.s23.Size = New System.Drawing.Size(64, 56)
         Me.s23.TabIndex = 23
         '
         'TextBox69
@@ -1736,9 +1743,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s24.BackColor = System.Drawing.Color.Black
         Me.s24.Controls.Add(Me.TextBox31)
-        Me.s24.Location = New System.Drawing.Point(1225, 81)
+        Me.s24.Location = New System.Drawing.Point(783, 67)
         Me.s24.Name = "s24"
-        Me.s24.Size = New System.Drawing.Size(114, 70)
+        Me.s24.Size = New System.Drawing.Size(73, 56)
         Me.s24.TabIndex = 24
         '
         'TextBox31
@@ -1757,9 +1764,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s103.BackColor = System.Drawing.Color.Black
         Me.s103.Controls.Add(Me.TextBox64)
-        Me.s103.Location = New System.Drawing.Point(670, 620)
+        Me.s103.Location = New System.Drawing.Point(428, 508)
         Me.s103.Name = "s103"
-        Me.s103.Size = New System.Drawing.Size(104, 70)
+        Me.s103.Size = New System.Drawing.Size(64, 56)
         Me.s103.TabIndex = 26
         '
         'TextBox64
@@ -1778,9 +1785,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s45.BackColor = System.Drawing.Color.Black
         Me.s45.Controls.Add(Me.TextBox67)
-        Me.s45.Location = New System.Drawing.Point(892, 235)
+        Me.s45.Location = New System.Drawing.Point(570, 193)
         Me.s45.Name = "s45"
-        Me.s45.Size = New System.Drawing.Size(104, 70)
+        Me.s45.Size = New System.Drawing.Size(64, 56)
         Me.s45.TabIndex = 27
         '
         'TextBox67
@@ -1799,9 +1806,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s80.BackColor = System.Drawing.Color.DimGray
         Me.s80.Controls.Add(Me.TextBox70)
-        Me.s80.Location = New System.Drawing.Point(781, 466)
+        Me.s80.Location = New System.Drawing.Point(499, 382)
         Me.s80.Name = "s80"
-        Me.s80.Size = New System.Drawing.Size(104, 70)
+        Me.s80.Size = New System.Drawing.Size(64, 56)
         Me.s80.TabIndex = 28
         '
         'TextBox70
@@ -1820,9 +1827,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s116.BackColor = System.Drawing.Color.DimGray
         Me.s116.Controls.Add(Me.TextBox32)
-        Me.s116.Location = New System.Drawing.Point(781, 697)
+        Me.s116.Location = New System.Drawing.Point(499, 571)
         Me.s116.Name = "s116"
-        Me.s116.Size = New System.Drawing.Size(104, 71)
+        Me.s116.Size = New System.Drawing.Size(64, 62)
         Me.s116.TabIndex = 29
         '
         'TextBox32
@@ -1841,9 +1848,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s114.BackColor = System.Drawing.Color.DimGray
         Me.s114.Controls.Add(Me.TextBox71)
-        Me.s114.Location = New System.Drawing.Point(559, 697)
+        Me.s114.Location = New System.Drawing.Point(357, 571)
         Me.s114.Name = "s114"
-        Me.s114.Size = New System.Drawing.Size(104, 71)
+        Me.s114.Size = New System.Drawing.Size(64, 62)
         Me.s114.TabIndex = 33
         '
         'TextBox71
@@ -1862,9 +1869,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s67.BackColor = System.Drawing.Color.Black
         Me.s67.Controls.Add(Me.TextBox65)
-        Me.s67.Location = New System.Drawing.Point(670, 389)
+        Me.s67.Location = New System.Drawing.Point(428, 319)
         Me.s67.Name = "s67"
-        Me.s67.Size = New System.Drawing.Size(104, 70)
+        Me.s67.Size = New System.Drawing.Size(64, 56)
         Me.s67.TabIndex = 35
         '
         'TextBox65
@@ -1883,9 +1890,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s89.BackColor = System.Drawing.Color.DimGray
         Me.s89.Controls.Add(Me.TextBox25)
-        Me.s89.Location = New System.Drawing.Point(448, 543)
+        Me.s89.Location = New System.Drawing.Point(286, 445)
         Me.s89.Name = "s89"
-        Me.s89.Size = New System.Drawing.Size(104, 70)
+        Me.s89.Size = New System.Drawing.Size(64, 56)
         Me.s89.TabIndex = 36
         '
         'TextBox25
@@ -1904,9 +1911,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s60.BackColor = System.Drawing.Color.LightGreen
         Me.s60.Controls.Add(Me.TextBox26)
-        Me.s60.Location = New System.Drawing.Point(1225, 312)
+        Me.s60.Location = New System.Drawing.Point(783, 256)
         Me.s60.Name = "s60"
-        Me.s60.Size = New System.Drawing.Size(114, 70)
+        Me.s60.Size = New System.Drawing.Size(73, 56)
         Me.s60.TabIndex = 37
         '
         'TextBox26
@@ -1925,9 +1932,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s77.BackColor = System.Drawing.Color.DimGray
         Me.s77.Controls.Add(Me.TextBox23)
-        Me.s77.Location = New System.Drawing.Point(448, 466)
+        Me.s77.Location = New System.Drawing.Point(286, 382)
         Me.s77.Name = "s77"
-        Me.s77.Size = New System.Drawing.Size(104, 70)
+        Me.s77.Size = New System.Drawing.Size(64, 56)
         Me.s77.TabIndex = 38
         '
         'TextBox23
@@ -1946,9 +1953,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s90.BackColor = System.Drawing.Color.DimGray
         Me.s90.Controls.Add(Me.TextBox24)
-        Me.s90.Location = New System.Drawing.Point(559, 543)
+        Me.s90.Location = New System.Drawing.Point(357, 445)
         Me.s90.Name = "s90"
-        Me.s90.Size = New System.Drawing.Size(104, 70)
+        Me.s90.Size = New System.Drawing.Size(64, 56)
         Me.s90.TabIndex = 39
         '
         'TextBox24
@@ -1964,7 +1971,7 @@ Partial Class Start
         '
         Me.tblPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.[Single]
         Me.tblPanel.ColumnCount = 12
-        Me.tblPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333!))
+        Me.tblPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.080808!))
         Me.tblPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333!))
         Me.tblPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333!))
         Me.tblPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.333333!))
@@ -2054,9 +2061,9 @@ Partial Class Start
         Me.tblPanel.Controls.Add(Me.s45, 8, 3)
         Me.tblPanel.Controls.Add(Me.s57, 8, 4)
         Me.tblPanel.Controls.Add(Me.s32, 7, 2)
-        Me.tblPanel.Controls.Add(Me.s43, 7, 3)
-        Me.tblPanel.Controls.Add(Me.s44, 6, 3)
-        Me.tblPanel.Location = New System.Drawing.Point(12, 115)
+        Me.tblPanel.Controls.Add(Me.s44, 7, 3)
+        Me.tblPanel.Controls.Add(Me.s43, 6, 3)
+        Me.tblPanel.Location = New System.Drawing.Point(6, 68)
         Me.tblPanel.Name = "tblPanel"
         Me.tblPanel.RowCount = 10
         Me.tblPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
@@ -2069,7 +2076,7 @@ Partial Class Start
         Me.tblPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.tblPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.tblPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.tblPanel.Size = New System.Drawing.Size(1343, 772)
+        Me.tblPanel.Size = New System.Drawing.Size(860, 637)
         Me.tblPanel.TabIndex = 23
         '
         's115
@@ -2079,9 +2086,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s115.BackColor = System.Drawing.Color.DimGray
         Me.s115.Controls.Add(Me.TextBox33)
-        Me.s115.Location = New System.Drawing.Point(670, 697)
+        Me.s115.Location = New System.Drawing.Point(428, 571)
         Me.s115.Name = "s115"
-        Me.s115.Size = New System.Drawing.Size(104, 71)
+        Me.s115.Size = New System.Drawing.Size(64, 62)
         Me.s115.TabIndex = 36
         '
         'TextBox33
@@ -2100,9 +2107,9 @@ Partial Class Start
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.s91.BackColor = System.Drawing.Color.DimGray
         Me.s91.Controls.Add(Me.TextBox80)
-        Me.s91.Location = New System.Drawing.Point(670, 543)
+        Me.s91.Location = New System.Drawing.Point(428, 445)
         Me.s91.Name = "s91"
-        Me.s91.Size = New System.Drawing.Size(104, 70)
+        Me.s91.Size = New System.Drawing.Size(64, 56)
         Me.s91.TabIndex = 40
         '
         'TextBox80
@@ -2116,9 +2123,9 @@ Partial Class Start
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(902, 502)
+        Me.PictureBox1.Location = New System.Drawing.Point(575, 385)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(468, 397)
+        Me.PictureBox1.Size = New System.Drawing.Size(307, 320)
         Me.PictureBox1.TabIndex = 24
         Me.PictureBox1.TabStop = False
         '
@@ -2127,7 +2134,7 @@ Partial Class Start
         Me.lblEstado.AutoSize = True
         Me.lblEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEstado.ForeColor = System.Drawing.Color.Orange
-        Me.lblEstado.Location = New System.Drawing.Point(19, 663)
+        Me.lblEstado.Location = New System.Drawing.Point(772, 450)
         Me.lblEstado.Name = "lblEstado"
         Me.lblEstado.Size = New System.Drawing.Size(33, 20)
         Me.lblEstado.TabIndex = 27
@@ -2144,9 +2151,9 @@ Partial Class Start
         Me.GroupBox1.Controls.Add(Me.txtY)
         Me.GroupBox1.Controls.Add(Me.BtnIniciar)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 16)
+        Me.GroupBox1.Location = New System.Drawing.Point(6, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1335, 79)
+        Me.GroupBox1.Size = New System.Drawing.Size(663, 64)
         Me.GroupBox1.TabIndex = 28
         Me.GroupBox1.TabStop = False
         '
@@ -2157,7 +2164,7 @@ Partial Class Start
         Me.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPause.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPause.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnPause.Location = New System.Drawing.Point(1149, 20)
+        Me.btnPause.Location = New System.Drawing.Point(495, 14)
         Me.btnPause.Name = "btnPause"
         Me.btnPause.Size = New System.Drawing.Size(43, 44)
         Me.btnPause.TabIndex = 35
@@ -2169,7 +2176,7 @@ Partial Class Start
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(262, 42)
+        Me.Label4.Location = New System.Drawing.Point(262, 36)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 13)
         Me.Label4.TabIndex = 34
@@ -2180,7 +2187,7 @@ Partial Class Start
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(122, 20)
+        Me.Label3.Location = New System.Drawing.Point(122, 14)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(136, 16)
         Me.Label3.TabIndex = 33
@@ -2188,7 +2195,7 @@ Partial Class Start
         '
         'txtAtraso
         '
-        Me.txtAtraso.Location = New System.Drawing.Point(125, 39)
+        Me.txtAtraso.Location = New System.Drawing.Point(125, 33)
         Me.txtAtraso.Name = "txtAtraso"
         Me.txtAtraso.Size = New System.Drawing.Size(133, 20)
         Me.txtAtraso.TabIndex = 32
@@ -2200,7 +2207,7 @@ Partial Class Start
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(17, 20)
+        Me.Label2.Location = New System.Drawing.Point(17, 14)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(19, 16)
         Me.Label2.TabIndex = 31
@@ -2208,42 +2215,44 @@ Partial Class Start
         '
         'txtY
         '
-        Me.txtY.Location = New System.Drawing.Point(19, 39)
+        Me.txtY.Location = New System.Drawing.Point(19, 33)
         Me.txtY.Name = "txtY"
         Me.txtY.Size = New System.Drawing.Size(100, 20)
         Me.txtY.TabIndex = 19
-        Me.txtY.Text = "0.5"
+        Me.txtY.Text = "0,5"
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(-14, 502)
+        Me.PictureBox2.Location = New System.Drawing.Point(-20, 384)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(469, 691)
+        Me.PictureBox2.Size = New System.Drawing.Size(306, 348)
         Me.PictureBox2.TabIndex = 29
         Me.PictureBox2.TabStop = False
         '
         'dgvTransicoes
         '
+        Me.dgvTransicoes.AllowDrop = True
         Me.dgvTransicoes.AllowUserToAddRows = False
         Me.dgvTransicoes.AllowUserToDeleteRows = False
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dgvTransicoes.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvTransicoes.AllowUserToOrderColumns = True
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dgvTransicoes.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.dgvTransicoes.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.dgvTransicoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvTransicoes.Location = New System.Drawing.Point(1377, 20)
+        Me.dgvTransicoes.Location = New System.Drawing.Point(891, 20)
         Me.dgvTransicoes.MultiSelect = False
         Me.dgvTransicoes.Name = "dgvTransicoes"
         Me.dgvTransicoes.ReadOnly = True
         Me.dgvTransicoes.RowHeadersVisible = False
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.DimGray
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dgvTransicoes.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.DimGray
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dgvTransicoes.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvTransicoes.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.dgvTransicoes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvTransicoes.Size = New System.Drawing.Size(374, 879)
+        Me.dgvTransicoes.Size = New System.Drawing.Size(374, 717)
         Me.dgvTransicoes.TabIndex = 30
         '
         'Label1
@@ -2251,18 +2260,102 @@ Partial Class Start
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(14, 511)
+        Me.Label1.Location = New System.Drawing.Point(4, 396)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(121, 16)
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Ações disponíveis:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(888, 4)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(307, 13)
+        Me.Label5.TabIndex = 35
+        Me.Label5.Text = "Após transição, mostra a ação escolhida com o valor atualizado"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Orange
+        Me.Label6.Location = New System.Drawing.Point(750, 411)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(103, 20)
+        Me.Label6.TabIndex = 36
+        Me.Label6.Text = "Estado atual:"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Orange
+        Me.Label7.Location = New System.Drawing.Point(596, 412)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(124, 20)
+        Me.Label7.TabIndex = 37
+        Me.Label7.Text = "Estado Anterior:"
+        '
+        'lblEstadoAnterior
+        '
+        Me.lblEstadoAnterior.AutoSize = True
+        Me.lblEstadoAnterior.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEstadoAnterior.ForeColor = System.Drawing.Color.Orange
+        Me.lblEstadoAnterior.Location = New System.Drawing.Point(596, 449)
+        Me.lblEstadoAnterior.Name = "lblEstadoAnterior"
+        Me.lblEstadoAnterior.Size = New System.Drawing.Size(33, 20)
+        Me.lblEstadoAnterior.TabIndex = 38
+        Me.lblEstadoAnterior.Text = "Est"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.Orange
+        Me.Label9.Location = New System.Drawing.Point(635, 450)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(18, 20)
+        Me.Label9.TabIndex = 39
+        Me.Label9.Text = "+"
+        '
+        'lblAcaoEscolhida
+        '
+        Me.lblAcaoEscolhida.AutoSize = True
+        Me.lblAcaoEscolhida.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAcaoEscolhida.ForeColor = System.Drawing.Color.Orange
+        Me.lblAcaoEscolhida.Location = New System.Drawing.Point(659, 449)
+        Me.lblAcaoEscolhida.Name = "lblAcaoEscolhida"
+        Me.lblAcaoEscolhida.Size = New System.Drawing.Size(44, 20)
+        Me.lblAcaoEscolhida.TabIndex = 40
+        Me.lblAcaoEscolhida.Text = "acao"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.Orange
+        Me.Label10.Location = New System.Drawing.Point(720, 449)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(23, 20)
+        Me.Label10.TabIndex = 41
+        Me.Label10.Text = "->"
         '
         'Start
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
-        Me.ClientSize = New System.Drawing.Size(1774, 911)
+        Me.ClientSize = New System.Drawing.Size(1284, 749)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.lblAcaoEscolhida)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.lblEstadoAnterior)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.lblEstado)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtInfo)
@@ -2322,10 +2415,10 @@ Partial Class Start
         Me.s46.PerformLayout()
         Me.s92.ResumeLayout(False)
         Me.s92.PerformLayout()
-        Me.s44.ResumeLayout(False)
-        Me.s44.PerformLayout()
         Me.s43.ResumeLayout(False)
         Me.s43.PerformLayout()
+        Me.s44.ResumeLayout(False)
+        Me.s44.PerformLayout()
         Me.s42.ResumeLayout(False)
         Me.s42.PerformLayout()
         Me.s41.ResumeLayout(False)
@@ -2463,8 +2556,8 @@ Partial Class Start
     Friend WithEvents s13 As Panel
     Friend WithEvents s4 As Panel
     Friend WithEvents s3 As Panel
-    Friend WithEvents s44 As Panel
     Friend WithEvents s43 As Panel
+    Friend WithEvents s44 As Panel
     Friend WithEvents s42 As Panel
     Friend WithEvents s41 As Panel
     Friend WithEvents s40 As Panel
@@ -2621,4 +2714,11 @@ Partial Class Start
     Friend WithEvents txtAtraso As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents btnPause As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents lblEstadoAnterior As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents lblAcaoEscolhida As Label
+    Friend WithEvents Label10 As Label
 End Class
