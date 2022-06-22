@@ -23,8 +23,9 @@ Partial Class Start
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Start))
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.s36 = New System.Windows.Forms.Panel()
         Me.TextBox20 = New System.Windows.Forms.TextBox()
         Me.s9 = New System.Windows.Forms.Panel()
@@ -202,11 +203,12 @@ Partial Class Start
         Me.dgvTransicoes = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.lblEstadoAnterior = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.lblAcaoEscolhida = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.s36.SuspendLayout()
         Me.s9.SuspendLayout()
@@ -294,6 +296,8 @@ Partial Class Start
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvTransicoes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         's36
@@ -718,12 +722,12 @@ Partial Class Start
         '
         'BtnIniciar
         '
-        Me.BtnIniciar.BackColor = System.Drawing.Color.MediumAquamarine
-        Me.BtnIniciar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BtnIniciar.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.BtnIniciar.FlatAppearance.BorderColor = System.Drawing.Color.Cyan
         Me.BtnIniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BtnIniciar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnIniciar.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.BtnIniciar.Location = New System.Drawing.Point(544, 14)
+        Me.BtnIniciar.Location = New System.Drawing.Point(741, 11)
         Me.BtnIniciar.Name = "BtnIniciar"
         Me.BtnIniciar.Size = New System.Drawing.Size(113, 44)
         Me.BtnIniciar.TabIndex = 18
@@ -1583,10 +1587,11 @@ Partial Class Start
         '
         'txtInfo
         '
-        Me.txtInfo.Location = New System.Drawing.Point(6, 416)
+        Me.txtInfo.BackColor = System.Drawing.Color.Silver
+        Me.txtInfo.Location = New System.Drawing.Point(10, 87)
         Me.txtInfo.Multiline = True
         Me.txtInfo.Name = "txtInfo"
-        Me.txtInfo.Size = New System.Drawing.Size(115, 113)
+        Me.txtInfo.Size = New System.Drawing.Size(137, 122)
         Me.txtInfo.TabIndex = 22
         '
         's10
@@ -2133,12 +2138,12 @@ Partial Class Start
         '
         Me.lblEstado.AutoSize = True
         Me.lblEstado.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstado.ForeColor = System.Drawing.Color.Orange
-        Me.lblEstado.Location = New System.Drawing.Point(772, 450)
+        Me.lblEstado.ForeColor = System.Drawing.Color.PaleGreen
+        Me.lblEstado.Location = New System.Drawing.Point(107, 34)
         Me.lblEstado.Name = "lblEstado"
-        Me.lblEstado.Size = New System.Drawing.Size(33, 20)
+        Me.lblEstado.Size = New System.Drawing.Size(44, 20)
         Me.lblEstado.TabIndex = 27
-        Me.lblEstado.Text = "Est"
+        Me.lblEstado.Text = "s113"
         '
         'GroupBox1
         '
@@ -2153,18 +2158,19 @@ Partial Class Start
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(6, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(663, 64)
+        Me.GroupBox1.Size = New System.Drawing.Size(860, 64)
         Me.GroupBox1.TabIndex = 28
         Me.GroupBox1.TabStop = False
         '
         'btnPause
         '
-        Me.btnPause.BackColor = System.Drawing.Color.Orange
+        Me.btnPause.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.btnPause.Enabled = False
         Me.btnPause.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPause.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPause.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.btnPause.Location = New System.Drawing.Point(495, 14)
+        Me.btnPause.Location = New System.Drawing.Point(692, 11)
         Me.btnPause.Name = "btnPause"
         Me.btnPause.Size = New System.Drawing.Size(43, 44)
         Me.btnPause.TabIndex = 35
@@ -2235,21 +2241,29 @@ Partial Class Start
         Me.dgvTransicoes.AllowUserToAddRows = False
         Me.dgvTransicoes.AllowUserToDeleteRows = False
         Me.dgvTransicoes.AllowUserToOrderColumns = True
-        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dgvTransicoes.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dgvTransicoes.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvTransicoes.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.dgvTransicoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSkyBlue
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvTransicoes.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvTransicoes.Location = New System.Drawing.Point(891, 20)
         Me.dgvTransicoes.MultiSelect = False
         Me.dgvTransicoes.Name = "dgvTransicoes"
         Me.dgvTransicoes.ReadOnly = True
         Me.dgvTransicoes.RowHeadersVisible = False
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.DimGray
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.dgvTransicoes.RowsDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.DimGray
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dgvTransicoes.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvTransicoes.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.dgvTransicoes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvTransicoes.Size = New System.Drawing.Size(374, 717)
@@ -2258,11 +2272,11 @@ Partial Class Start
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(4, 396)
+        Me.Label1.Location = New System.Drawing.Point(6, 65)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(121, 16)
+        Me.Label1.Size = New System.Drawing.Size(139, 20)
         Me.Label1.TabIndex = 28
         Me.Label1.Text = "Ações disponíveis:"
         '
@@ -2271,29 +2285,18 @@ Partial Class Start
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label5.Location = New System.Drawing.Point(888, 4)
+        Me.Label5.Location = New System.Drawing.Point(923, 4)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(307, 13)
         Me.Label5.TabIndex = 35
         Me.Label5.Text = "Após transição, mostra a ação escolhida com o valor atualizado"
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Orange
-        Me.Label6.Location = New System.Drawing.Point(750, 411)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(103, 20)
-        Me.Label6.TabIndex = 36
-        Me.Label6.Text = "Estado atual:"
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Orange
-        Me.Label7.Location = New System.Drawing.Point(596, 412)
+        Me.Label7.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Label7.Location = New System.Drawing.Point(6, 34)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(124, 20)
         Me.Label7.TabIndex = 37
@@ -2303,45 +2306,74 @@ Partial Class Start
         '
         Me.lblEstadoAnterior.AutoSize = True
         Me.lblEstadoAnterior.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEstadoAnterior.ForeColor = System.Drawing.Color.Orange
-        Me.lblEstadoAnterior.Location = New System.Drawing.Point(596, 449)
+        Me.lblEstadoAnterior.ForeColor = System.Drawing.Color.LightCoral
+        Me.lblEstadoAnterior.Location = New System.Drawing.Point(126, 34)
         Me.lblEstadoAnterior.Name = "lblEstadoAnterior"
         Me.lblEstadoAnterior.Size = New System.Drawing.Size(33, 20)
         Me.lblEstadoAnterior.TabIndex = 38
         Me.lblEstadoAnterior.Text = "Est"
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Orange
-        Me.Label9.Location = New System.Drawing.Point(635, 450)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(18, 20)
-        Me.Label9.TabIndex = 39
-        Me.Label9.Text = "+"
-        '
         'lblAcaoEscolhida
         '
-        Me.lblAcaoEscolhida.AutoSize = True
         Me.lblAcaoEscolhida.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAcaoEscolhida.ForeColor = System.Drawing.Color.Orange
-        Me.lblAcaoEscolhida.Location = New System.Drawing.Point(659, 449)
+        Me.lblAcaoEscolhida.ForeColor = System.Drawing.Color.LightSkyBlue
+        Me.lblAcaoEscolhida.Location = New System.Drawing.Point(57, 61)
         Me.lblAcaoEscolhida.Name = "lblAcaoEscolhida"
-        Me.lblAcaoEscolhida.Size = New System.Drawing.Size(44, 20)
+        Me.lblAcaoEscolhida.Size = New System.Drawing.Size(107, 20)
         Me.lblAcaoEscolhida.TabIndex = 40
         Me.lblAcaoEscolhida.Text = "acao"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.Label7)
+        Me.GroupBox2.Controls.Add(Me.lblAcaoEscolhida)
+        Me.GroupBox2.Controls.Add(Me.lblEstadoAnterior)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
+        Me.GroupBox2.Location = New System.Drawing.Point(585, 384)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(283, 99)
+        Me.GroupBox2.TabIndex = 42
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Histórico"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Label8.Location = New System.Drawing.Point(6, 61)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(50, 20)
+        Me.Label8.TabIndex = 39
+        Me.Label8.Text = "Ação:"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Label10)
+        Me.GroupBox3.Controls.Add(Me.lblEstado)
+        Me.GroupBox3.Controls.Add(Me.Label1)
+        Me.GroupBox3.Controls.Add(Me.txtInfo)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.SystemColors.Control
+        Me.GroupBox3.Location = New System.Drawing.Point(585, 486)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(283, 218)
+        Me.GroupBox3.TabIndex = 43
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Atual"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.Orange
-        Me.Label10.Location = New System.Drawing.Point(720, 449)
+        Me.Label10.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Label10.Location = New System.Drawing.Point(6, 34)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(23, 20)
-        Me.Label10.TabIndex = 41
-        Me.Label10.Text = "->"
+        Me.Label10.Size = New System.Drawing.Size(105, 20)
+        Me.Label10.TabIndex = 37
+        Me.Label10.Text = "Estado Atual:"
         '
         'Start
         '
@@ -2349,24 +2381,18 @@ Partial Class Start
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DimGray
         Me.ClientSize = New System.Drawing.Size(1284, 749)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.lblAcaoEscolhida)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.lblEstadoAnterior)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.lblEstado)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtInfo)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.dgvTransicoes)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.tblPanel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "Start"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "TelaInicial"
+        Me.Text = "Projeto III"
         Me.s36.ResumeLayout(False)
         Me.s36.PerformLayout()
         Me.s9.ResumeLayout(False)
@@ -2534,6 +2560,10 @@ Partial Class Start
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.dgvTransicoes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2715,10 +2745,11 @@ Partial Class Start
     Friend WithEvents Label4 As Label
     Friend WithEvents btnPause As Button
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents lblEstadoAnterior As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents lblAcaoEscolhida As Label
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Label10 As Label
 End Class

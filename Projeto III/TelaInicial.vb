@@ -11,7 +11,6 @@ Public Class TelaInicial
         Select Case e.KeyCode
             Case Keys.Escape
                 e.Handled = True
-                Me.Close()
         End Select
     End Sub
 End Class
