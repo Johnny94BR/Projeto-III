@@ -306,6 +306,7 @@ Public Class Start
         Me.EstadoAtual = "s113"
         Invoke(Sub() Me.s113.Controls.Add(Me.pbcarro))
         Me.Iniciado = False
+        Me.AtualizaInfTela()
     End Sub
 
 
