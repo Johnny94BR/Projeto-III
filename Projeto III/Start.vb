@@ -201,7 +201,7 @@ Public Class Start
     '    Me.Invoke(Sub() Me.txtY.Text = "0")
     '    For j As Integer = 0 To 9
     '        Me.Invoke(Sub() Me.txtY.Text = CDbl(Me.txtY.Text) + 0.1)
-    '        For i As Integer = 0 To 39
+    '        For i As Integer = 0 To 99
     '            Me.Tentativa += 1
     '            Dim cont As Integer = Me.Inicia()
     '            Me.lstTransicoes.ForEach(Sub(x)
@@ -314,7 +314,7 @@ Public Class Start
         'Q(s1, a12) = r + 0.5 * max(Q(s2, a21),
         'Q(s2, a25), Q(s2, a23))
 
-        Me.lstTransicoes.Find(Function(p) p.Estado = Me.EstadoAtual And p.Acao = pmAcao).Recompensa = Math.Round(Me.r(pmEstadoNovo) + CDbl(Me.txtY.Text) * Me.Max(pmEstadoNovo), 4)
+        Me.lstTransicoes.Find(Function(p) p.Estado = Me.EstadoAtual And p.Acao = pmAcao).Recompensa = Math.Round(Me.r(pmEstadoNovo) + CDbl(Me.txtY.Text) * Me.Max(pmEstadoNovo), 6)
 
         Me.SalvaAlteraEstados(pmAcao, pmEstadoNovo)
 
@@ -414,6 +414,8 @@ Public Class Start
 
             End Try
             t1 = New Thread(AddressOf Me.Inicia)
+            't1 = New Thread(AddressOf Me.FazExperimento)
+
             t1.Start()
 
         End If
